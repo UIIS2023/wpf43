@@ -1,0 +1,26 @@
+﻿<Window x:Class="WpfAppPekara.Forme.FrmPorudzbina"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfAppPekara.Forme"
+        mc:Ignorable="d"
+        Title="Porudzbina" Height="367" Width="330">
+    <Grid>
+
+
+        <Button x:Name="btnSacuvaj" Content="Sacuvaj" Background="BlueViolet" BorderBrush="DarkViolet" HorizontalAlignment="Left" Margin="69,262,0,0" Width="75" VerticalAlignment="Top" Click="btnSacuvaj_Click"/>
+        <Button x:Name="btnOtkazi" Content="Otkazi" Background="Beige" BorderBrush="DarkViolet" HorizontalAlignment="Left" Margin="180,262,0,0" Width="75" VerticalAlignment="Top" Click="btnOtkazi_Click"/>
+
+
+        <Label Content="Proizvod: "  HorizontalAlignment="Left" Margin="29,64,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.035,-0.927"/>
+        <ComboBox x:Name="cbProizvod" HorizontalAlignment="Left" Margin="158,65,0,0" VerticalAlignment="Top" Height="23" Width="120" DisplayMemberPath="naziv" SelectedValuePath="proizvodID"/>
+        <Label Content="Kolicina proizvoda: "  HorizontalAlignment="Left" Margin="29,95,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.035,-0.927"/>
+        <TextBox x:Name="txtKolicina" HorizontalAlignment="Left" Margin="158,93,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="23" Width="120"/>
+        <Label Content="Kupac: "  HorizontalAlignment="Left" Margin="29,121,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.035,-0.927"/>
+        <ComboBox x:Name="cbKupac" HorizontalAlignment="Left" Margin="158,122,0,0" VerticalAlignment="Top" Height="23" Width="120" DisplayMemberPath="ime" SelectedValuePath="kupacID"/>
+        <Label Content="Kasir: "  HorizontalAlignment="Left" Margin="29,151,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.035,-0.927"/>
+        <ComboBox x:Name="cbKasir" HorizontalAlignment="Left" Margin="158,152,0,0" VerticalAlignment="Top" Height="23" Width="120" DisplayMemberPath="prezime" SelectedValuePath="kasirID"/>
+
+    </Grid>
+</Window>

@@ -1,0 +1,18 @@
+﻿<Window x:Class="WpfAppPekara.Forme.FrmKasir"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfAppPekara.Forme"
+        mc:Ignorable="d"
+        Title="Kasir" Height="302" Width="306">
+    <Grid>
+        <Label Content="Ime: "  HorizontalAlignment="Left" Margin="29,30,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.035,-0.927" Height="26" Width="91"/>
+        <TextBox x:Name="txtIme" HorizontalAlignment="Left" Margin="158,33,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="23" Width="120"/>
+        <Label Content="Prezime: "  HorizontalAlignment="Left" Margin="29,60,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.035,-0.927" Height="26" Width="91"/>
+        <TextBox x:Name="txtPrezime" HorizontalAlignment="Left" Margin="158,63,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="23" Width="120"/>
+        <Button x:Name="btnSacuvaj" Content="Sacuvaj" Background="BlueViolet" BorderBrush="DarkViolet" HorizontalAlignment="Left" Margin="45,217,0,0" Width="75" VerticalAlignment="Top" Click="btnSacuvaj_Click" Height="20"/>
+        <Button x:Name="btnOtkazi" Content="Otkazi" Background="Beige" BorderBrush="DarkViolet" HorizontalAlignment="Left" Margin="180,217,0,0" Width="75" VerticalAlignment="Top" Click="btnOtkazi_Click" Height="20"/>
+
+    </Grid>
+</Window>
